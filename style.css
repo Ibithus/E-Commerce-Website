@@ -254,6 +254,7 @@ nav {
     text-align: center;
     width: calc(100%/4);
     padding: 0 24px;
+    transition: all 300ms ease;
 }
 
 .Book-Image-Wrapper {
@@ -276,14 +277,21 @@ nav {
 .Book-Title {
     font-size: 20px;
     margin-bottom: 8px;
+    font-weight: 500;
 }
 
 .Book-Price {
     font-size: 16px;
     margin-top: 8px;
     opacity: 0.8;
+    font-weight: 500;
 }
 
 .Star {
     color: #FFCA28;
+}
+
+.Book:hover {
+    transform: scale(1.025);
+    cursor: no-drop;
 }
