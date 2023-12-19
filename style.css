@@ -250,7 +250,7 @@ nav {
 
 .Highlight-Para {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   margin: 0 auto;
   line-height: 1.5;
 }
@@ -411,6 +411,12 @@ footer {
 
 /*Making Website Responsive*/
 
+@media(max-width:836px) {
+    .Highlight-Para {
+        max-width: 150px;
+    }
+}
+
 
 @media(max-width: 768px) {
 
@@ -451,6 +457,7 @@ footer {
 
     .Highlight-Para {
         font-size: 20px;
+        min-width: 280px;
     }
 
 }
@@ -471,11 +478,32 @@ footer {
     .Book-Price, .Star {
         font-size: 14px;
     }
+
+    .Highlight-Para {
+        max-width: 300px;
+    }
 }
 
-@media(max-width:360px) {
+@media(max-width:375px) {
 
     .Sub-Title {
         font-size: 18px;
     }
+
+    .Highlight-Title{
+        font-size: 20px;
+    }
+
+    .Book {
+        width: calc(100%);
+    }
+
+    .Book-Title {
+        font-size: 20px;
+    }
+
+    .Book-Price, .Star {
+        font-size: 16px;
+    }
+
 }
