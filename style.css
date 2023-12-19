@@ -56,13 +56,13 @@ nav {
   padding: 0 24px;
 }
 
-.Nav-Logo-Wrapper {
+.Nav-Logo-Wrapper, .Footer-Logo-Wrapper {
   width: 150px;
   display: flex;
   align-items: center;
 }
 
-.Nav-Logo {
+.Nav-Logo, .Footer-Logo {
   width: 100%;
 }
 
@@ -299,4 +299,50 @@ nav {
 
 .Latest-Book-Container {
     padding-top: 48px;
+}
+
+/*Explore*/
+
+#Explore {
+    width: 100%;
+    padding: 48px 0;
+    background-color: rgb(115, 66, 214, 0.1);
+}
+
+.Explore-Container, .Footer-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
+
+footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    color: white;
+    background-color: #242424;
+}
+
+.Footer-Logo-Wrapper {
+    margin-bottom: 24px;
+}
+
+.Footer-Logo {
+    filter: grayscale(1) invert(1);
+}
+
+.Footer-Link-Container {
+    margin-bottom: 24px;
+}
+
+.Footer-Links {
+    color: white;
+    margin: 0 24px;
+    transition: all 300ms ease;
+}
+
+.Footer-Links:hover {
+    cursor: no-drop;
+    text-decoration: underline;
 }
