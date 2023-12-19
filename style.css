@@ -196,32 +196,31 @@ nav {
 /*Adding-Wave Image:*/
 
 #Library-Info {
-    position: relative;
-  }
-  
-  #Library-Info::before,
-  #Library-Info::after {
-    background: url("assets/wave.svg");
-    content: "";
-    position: absolute;
-    width: 101vw;
-    height: 12vw;
-    left: 0;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  #Library-Info::before {
-    transform: translateY(-100%);
-    top: 1px;
-  }
-  
-  #Library-Info::after {
-    transform: translateY(100%) rotate(180deg);
-    bottom: 1px;
-  }
+  position: relative;
+}
 
+#Library-Info::before,
+#Library-Info::after {
+  background: url("assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Library-Info::before {
+  transform: translateY(-100%);
+  top: 1px;
+}
+
+#Library-Info::after {
+  transform: translateY(100%) rotate(180deg);
+  bottom: 1px;
+}
 
 /*FEATURES*/
 
@@ -230,68 +229,74 @@ nav {
   width: 100%;
 }
 
-.Book-Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 144px;
-    padding-bottom: 48px;
-    max-width: 1000px;
+.Book-Container, .Latest-Book-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 144px;
+  padding-bottom: 48px;
+  max-width: 1000px;
 }
 
 .Books-Wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 48px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 48px 24px;
 }
 
 .Book {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: calc(100%/4);
-    padding: 0 24px;
-    transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% / 4);
+  padding: 16px 24px;
+  transition: all 300ms ease;
 }
 
 .Book-Image-Wrapper {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 24px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
 }
 
 .Book-Image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .Book-Info {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .Book-Title {
-    font-size: 20px;
-    margin-bottom: 8px;
-    font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .Book-Price {
-    font-size: 16px;
-    margin-top: 8px;
-    opacity: 0.8;
-    font-weight: 500;
+  font-size: 16px;
+  margin-top: 8px;
+  opacity: 0.8;
+  font-weight: 500;
 }
 
 .Star {
-    color: #FFCA28;
+  color: #ffca28;
 }
 
 .Book:hover {
-    transform: scale(1.025);
-    cursor: no-drop;
+  transform: scale(1.025);
+  cursor: no-drop;
+}
+
+/*Latest*/
+
+.Latest-Book-Container {
+    padding-top: 48px;
 }
