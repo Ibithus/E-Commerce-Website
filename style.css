@@ -431,6 +431,10 @@ footer {
         width: calc(100% / 2);
     }
 
+    .Book-Image {
+        max-height: 300px;
+    }
+
     .Highlight-Wrapper {
         display: flex;
         flex-wrap:wrap;
