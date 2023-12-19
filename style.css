@@ -103,12 +103,74 @@ nav {
   border: 2px solid #7342d6;
 }
 
+/*Creating Hamburger Menu*/
+
+.Hamburger-Menu {
+    border: none;
+    font-size: 24px;
+    color: #7342d6;
+    display: none;
+}
+
+.Backdrop-Menu {
+    position: absolute;
+    z-index: 100;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+.Menu-Open .Backdrop-Menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Menu-Open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.Menu-Link-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu-Links {
+    margin: 24px 0;
+    font-size: 24px;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.Menu-Links:hover {
+    text-decoration: underline;
+}
+
+.Menu-Close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+
 /*LANDING-PAGE INFO*/
 
 .Landing-Info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 24px;
 }
 
 .Browse-Button {
@@ -150,8 +212,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 20px;
   max-width: 1000px;
 }
 
@@ -170,6 +231,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 0 16px;
 }
 
 .Highlight-Icon {
@@ -188,7 +250,7 @@ nav {
 
 .Highlight-Para {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   margin: 0 auto;
   line-height: 1.5;
 }
@@ -338,11 +400,78 @@ footer {
 
 .Footer-Links {
     color: white;
-    margin: 0 24px;
+    margin: 0 12px;
     transition: all 300ms ease;
 }
 
 .Footer-Links:hover {
     cursor: no-drop;
     text-decoration: underline;
+}
+
+/*Making Website Responsive*/
+
+
+@media(max-width: 768px) {
+
+    .Nav-Link {
+        display: none;
+    }
+
+    .Hamburger-Menu {
+        display: block;
+    }
+
+    .Section-Title {
+        font-size: 32px;
+        max-width: 400px;
+    }
+    
+    .Book {
+        width: calc(100% / 2);
+    }
+
+    .Highlight-Wrapper {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .Highlight {
+        width: calc(100%);
+        margin-bottom: 48px;
+    }
+
+    .Highlight-Title {
+        font-size: 24px;
+    }
+
+    .Highlight-Para {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .Section-Title{
+        font-size: 28px;
+    }
+
+    .Sub-Title {
+        font-size: 20px;
+    }
+
+    .Book-Title {
+        font-size: 16px;
+    }
+
+    .Book-Price, .Star {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:360px) {
+
+    .Sub-Title {
+        font-size: 18px;
+    }
 }

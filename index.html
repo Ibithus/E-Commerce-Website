@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="Landing-Page">
@@ -20,6 +21,19 @@
           <a class="Nav-Link Link-Hover-Effect" href="#">Home</a>
           <a class="Nav-Link Link-Hover-Effect" href="#">Contact</a>
           <a class="Nav-Link Nav-Link-Primary" href="#Features">Books</a>
+        </div>
+        <button class="Hamburger-Menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="Backdrop-Menu">
+            <button class="Menu-Close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="Menu-Link-Wrapper">
+                <a class="Menu-Links" onclick="closeMenu()" href="#">Home</a>
+                <a class="Menu-Links" onclick="closeMenu()" href="#Features">Books</a>
+                <a class="Menu-Links" onclick="closeMenu()" href="#">Contact</a>
+            </div>
         </div>
       </nav>
       <header class="Flex Flex-1">
